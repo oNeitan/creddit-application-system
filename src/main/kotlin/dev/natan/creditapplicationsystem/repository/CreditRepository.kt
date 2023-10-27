@@ -1,0 +1,9 @@
+package dev.natan.creditapplicationsystem.repository
+
+import dev.natan.creditapplicationsystem.model.Credit
+import org.springframework.data.jpa.repository.JpaRepository
+import org.springframework.stereotype.Repository
+
+@Repository
+interface CreditRepository: JpaRepository<Credit, Long> {
+}
