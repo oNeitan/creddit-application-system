@@ -13,5 +13,5 @@ data class Credit(
     @Column(nullable = false) val firstInstallment: LocalDate,
     @Column(nullable = false) val numberOfInstallments: Int = 0,
     @Column(nullable = false) @Enumerated val status: CreditStatus = CreditStatus.IN_PROGRESS,
-    @JoinColumn(nullable = false) @ManyToOne val customer: Customer? = null
+    @JoinColumn(nullable = false) @ManyToOne var customer: Customer? = null
     )
